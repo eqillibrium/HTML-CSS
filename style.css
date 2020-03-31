@@ -92,7 +92,8 @@ a {
     margin-right: 13px;
 }
 
-.logo:last-child {
+.accent {
+    font-family: 'Lato';
     font-size: 27px;
     font-weight: 900;
     color: rgba(241, 109, 127, 1);
@@ -368,6 +369,7 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
 .offer__content-flex {
     display: flex;
     padding-left: 36px;
@@ -375,7 +377,7 @@ a {
     padding-top: 48px;
 }
 
-.offer__text-paddings{
+.offer__text-paddings {
     padding-left: 33px;
 }
 
@@ -393,4 +395,93 @@ a {
     letter-spacing: 0.03em;
     line-height: 24px;
     width: 236px;
+}
+
+.subscribe__human {
+    display: inline-block;
+    float: left;
+    min-width: 600px;
+    min-height: 438px;
+    border-right: 1px solid  rgba(255, 255, 255, 1);
+}
+
+.subscribe__human-text {
+    width: 426px;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    display: inline-block;
+    padding-top: 123px;
+    padding-left: 27px;
+}
+
+.subscribe__human-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(241, 109, 127, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    padding-left: 113px;
+    padding-top: 10px;
+}
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.subscribe__form-h1 {
+    font-size: 24px;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.subscribe__form-h3 {
+    font-size: 14px;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+
+.subscribe__button {
+    height: 46px;
+    width: 104px;
+    background-color: rgba(241, 109, 127, 1);
+    border-radius: 0px 23px 23px 0px;
+}
+
+.subscribe__email {
+    height: 46px;
+    width: 282px;
+    background-color: rgba(225, 225, 225, 1);
+    border-radius: 23px;
+}
+
+.subscribe {
+    min-height: 438px;
+    background-image: url("img/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(247, 247, 248, 1);
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin-top: 97px;
+}
+
+.subscribe__human-img {
+    display: inline-block;
+    float: left;
+    padding-top: 111px;
+}
+
+.subscribe__form-button{
+    padding-top: 35px;
 }

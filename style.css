@@ -253,7 +253,9 @@ a {
     justify-content: space-between;
 }
 
-.featured__items_block {}
+.featured__items_block {
+    position: relative;
+}
 
 .featured__items_block-image-1 {
     background-image: url(img/featured/featured-1.jpg);
@@ -326,10 +328,59 @@ a {
     margin-top: 19px;
 }
 
-.featured__hover:hover {
-    opacity: 0.16;
-    background-color: rgba(58, 56, 56, 0.83) box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
-    filter: greyscale(1);
+.featured__items_block:hover .featured__items_block-image-1 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__items_block-image-2 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__items_block-image-3 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__items_block-image-4 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__items_block-image-5 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__items_block-image-6 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__items_block-image-7 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__items_block-image-8 {
+    filter: brightness(40%);
+}
+
+.featured__items_block:hover .product__add {
+    display: flex;
+}
+
+.product__add {
+    position: absolute;
+    top: 97px;
+    left: 70px;
+    height: 39px;
+    width: 123px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.product__add:hover {
+    box-shadow: 0 0 5px #fff;
 }
 
 .offer {
@@ -402,7 +453,7 @@ a {
     float: left;
     min-width: 600px;
     min-height: 438px;
-    border-right: 1px solid  rgba(255, 255, 255, 1);
+    border-right: 1px solid rgba(255, 255, 255, 1);
 }
 
 .subscribe__human-text {
@@ -454,13 +505,27 @@ a {
     width: 104px;
     background-color: rgba(241, 109, 127, 1);
     border-radius: 0px 23px 23px 0px;
+    border: none;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 46px;
 }
 
 .subscribe__email {
     height: 46px;
-    width: 282px;
     background-color: rgba(225, 225, 225, 1);
     border-radius: 23px;
+    border: none;
+    font-size: 14px;
+    color: rgba(34, 34, 36, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 54px;
+    padding-left: 28px;
+    width: 255px;
+    text-align: inherit;
 }
 
 .subscribe {
@@ -482,6 +547,7 @@ a {
     padding-top: 111px;
 }
 
-.subscribe__form-button{
+.subscribe__form-button {
     padding-top: 35px;
+    display: flex;
 }

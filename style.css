@@ -516,7 +516,7 @@ a {
 .subscribe__email {
     height: 46px;
     background-color: rgba(225, 225, 225, 1);
-    border-radius: 23px;
+    border-radius: 23px 0 0 23px;
     border: none;
     font-size: 14px;
     color: rgba(34, 34, 36, 1);
@@ -614,17 +614,32 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.social__list {
-    list-style-type: none;
-    display: flex;
     align-items: center;
 }
 
-.social__link {
+.rights {
+    font-size: 16px;
+    color: rgba(122, 122, 122, 1);
+    letter-spacing: 0.03em;
+    line-height: 42px;
+}
+
+.social__list {
+    display: flex;
+}
+
+.fa {
     height: 32px;
     width: 32px;
+    line-height: 30px;
     background-color: white;
-    margin: 7px;
+    margin: 4px;
+    text-align: center;
+    border-radius: 2px;
+    color: rgba(178, 178, 178, 1);
+}
+
+.fa:hover {
+    background-color: rgba(241, 109, 127, 1);
+    color: rgba(247, 247, 248, 1);
 }

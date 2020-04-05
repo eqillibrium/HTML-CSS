@@ -59,7 +59,7 @@ a {
     line-height: 32px;
     font-family: 'Lato';
     padding-left: 15px;
-    padding-right: 159px;
+    padding-right: 124px;
 }
 
 .search_button {
@@ -126,6 +126,58 @@ a {
     color: #222222;
     line-height: 26px;
     text-transform: uppercase;
+}
+
+.drop {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 12px 20px;
+    position: absolute;
+    top: 52px;
+    display: none;
+}
+
+.drop__flex {
+    margin-right: 46px;
+}
+
+.drop__flex:last-child {
+    margin-right: 0;
+}
+
+.drop__h3 {
+    font-size: 14px;
+    color: #232323;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    width: 234px;
+    margin-bottom: 8px;
+}
+
+.drop__ul {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.drop__a {
+    font-size: 14px;
+    color: #646464;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+}
+
+.menu__list {
+    position: relative;
+}
+
+.menu__list:hover .drop {
+    display: flex;
+}
+
+.menu__list:hover .drop_last {
+    right: 0;
 }
 
 .promo {
@@ -328,42 +380,6 @@ a {
     margin-top: 19px;
 }
 
-.featured__items_block:hover .featured__items_block-image-1 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__items_block-image-2 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__items_block-image-3 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__items_block-image-4 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__items_block-image-5 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__items_block-image-6 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__items_block-image-7 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__items_block-image-8 {
-    filter: brightness(40%);
-}
-
-.featured__items_block:hover .product__add {
-    display: flex;
-}
-
 .product__add {
     position: absolute;
     top: 97px;
@@ -530,7 +546,7 @@ a {
 
 .subscribe {
     min-height: 438px;
-    background-image: url("img/subscribe.jpg");
+    background: url("img/sub-op.png") ,url("img/subscribe.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-color: rgba(247, 247, 248, 1);

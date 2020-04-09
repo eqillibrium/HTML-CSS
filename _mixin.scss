@@ -1,0 +1,19 @@
+@mixin shop-cart__details-font () {
+    font-size: 13px;
+    color: rgba(101, 101, 101, 1);
+    line-height: 20px;
+    font-weight: 700;
+}
+
+@mixin shop-cart__h3-font () {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: -0.01em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+@mixin borders () {
+    border: 1px solid;
+}

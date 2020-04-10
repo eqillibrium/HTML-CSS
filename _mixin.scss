@@ -17,3 +17,13 @@
 @mixin borders () {
     border: 1px solid;
 }
+
+@mixin sort-name () {
+    font-size: 14px;
+    color: $color-deep-grey;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    border: 1px solid rgba(235, 235, 235, 1);
+}

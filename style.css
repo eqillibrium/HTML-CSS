@@ -1280,7 +1280,6 @@ a {
 
 .forms {
   margin-top: 63px;
-  min-height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1806,6 +1805,19 @@ a {
   display: flex;
 }
 
+.forms__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forms__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
 .forms__shipping {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1819,8 +1831,12 @@ a {
   font-weight: bold;
   color: #222222;
   text-transform: uppercase;
-  margin-left: -35px;
-  margin-bottom: 30px;
+  margin-bottom: 39px;
+  display: block;
+}
+
+.forms__legend::-webkit-details-marker {
+  display: none;
 }
 
 .forms__head {
@@ -1864,6 +1880,7 @@ a {
   background-color: white;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 79px;
 }
 
 .forms__button:hover {
@@ -1949,10 +1966,6 @@ a {
   margin-bottom: 30px;
 }
 
-.forms__registed {
-  margin-top: 46px;
-}
-
 .forms__redstar {
   font-size: 17px;
   color: #ff0d0d;
@@ -1973,6 +1986,10 @@ a {
   color: #f16d7f;
 }
 
+.forms__list {
+  width: 100%;
+}
+
 .forms__link {
   font-size: 16px;
   font-weight: bold;
@@ -1980,5 +1997,9 @@ a {
   line-height: 72px;
   text-transform: uppercase;
   border-bottom: 1px solid #e8e8e8;
+}
+
+.forms__first-link {
+  border-top: 1px solid #e8e8e8;
 }
 /*# sourceMappingURL=style.css.map */

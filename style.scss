@@ -1102,7 +1102,7 @@ a {
 
 .forms {
     margin-top: 63px;
-    min-height: 280px;
+    
     display: flex;
 }
 
@@ -1523,6 +1523,16 @@ a {
 .forms {
     display: flex;
 
+    &__box {
+        display: flex;
+        
+    }
+
+    &__details {
+        display: flex;
+        width: 100%;
+    }
+
     &__shipping {
         display: flex;
         width: 50%;
@@ -1534,8 +1544,9 @@ a {
         font-weight: bold;
         color: $color-black;
         text-transform: uppercase;
-        margin-left: -35px;
-        margin-bottom: 30px;
+        margin-bottom: 39px;
+        display: block;
+        &::-webkit-details-marker {display: none;}
     }
 
     &__head {
@@ -1578,6 +1589,7 @@ a {
         border: 1px solid $color-platinum;
         background-color: $color-white;
         transition: all 0.3s;
+        margin-bottom: 79px;
 
         &:hover {
             background-color: $color-select;
@@ -1665,7 +1677,6 @@ a {
     }
 
     &__registed {
-        margin-top: 46px;
     }
 
     &__redstar {
@@ -1687,6 +1698,10 @@ a {
         }
     }
 
+    &__list{
+        width: 100%;
+    }
+
     &__link {
         font-size: 16px;
         font-weight: bold;
@@ -1694,6 +1709,10 @@ a {
         line-height: 72px;
         text-transform: uppercase;
         border-bottom: 1px solid $color-platinum;
+    }
+
+    &__first-link{
+        border-top: 1px solid $color-platinum;
     }
 
 }

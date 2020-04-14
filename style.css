@@ -53,6 +53,13 @@ a {
 
 .header__cart {
   margin-right: 26px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__cart:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .browse {
@@ -131,6 +138,13 @@ a {
   line-height: 38px;
   background-color: #f16d7f;
   padding: 0 16px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .menu {
@@ -151,6 +165,13 @@ a {
   color: #222222;
   line-height: 26px;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__link:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .menu__list {
@@ -352,8 +373,37 @@ a {
           justify-content: space-between;
 }
 
+.featured__hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .featured__items_block {
   position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.featured__items_block:hover {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.featured__items_block:hover .featured__hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.featured__items_block:hover .featured__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featured__items_block:hover .featured__star {
+  display: block;
 }
 
 .featured__items_block-image-1 {
@@ -434,26 +484,6 @@ a {
   margin-top: 19px;
 }
 
-.featured__items_block:hover {
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
-}
-
-.featured__items_block:hover .featured__hover {
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
-}
-
-.featured__items_block:hover .featured__add {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.featured__items_block:hover .featured__star {
-  display: block;
-}
-
 .featured__add {
   position: absolute;
   top: 97px;
@@ -471,6 +501,8 @@ a {
   font-weight: bold;
   color: #ffffff;
   border: 1px solid #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .featured__add:hover {
@@ -548,6 +580,16 @@ a {
   letter-spacing: 0.03em;
   line-height: 24px;
   width: 236px;
+}
+
+.offer__img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.offer__img:hover {
+  -webkit-transform: rotateY(30deg);
+  transform: rotateY(30deg);
 }
 
 .subscribe {

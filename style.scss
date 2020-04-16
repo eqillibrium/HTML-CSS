@@ -42,95 +42,100 @@ a {
 
     &__cart {
         margin-right: 26px;
-        transition: all 0.3s;
+    }
+    
+    &__cart-drop {
+        position: relative;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    
+    &__drop {
+        background-color: $color-white;
+        border-radius: 5px;
+        padding: 5px 15px;
+        position: absolute;
+        top: 50px;
+        height: 430px;
+        width: 262px;
+        left: -58px;
+        display: none;
+    }
 
+    &__dropimg{
+        transition: all 0.3s;
         &:hover {
-            -moz-transform: scale(0.9);
-            -webkit-transform: scale(0.9);
-            -o-transform: scale(0.9);
-            -ms-transform: scale(0.9);
-            transform: scale(0.9);
+            transform: rotate(15deg);
+        }
+    }
+    
+    &__cart-drop:hover .header__drop {
+        display: block;
+    }
+    
+    &__dropbox {
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-platinum;
+        overflow: hidden;
+    }
+    
+    &__dropcontent {
+        margin-left: 14px;
+    }
+    
+    &__dropname {
+        font-size: 12px;
+        font-weight: bold;
+        color: $color-black;
+        text-transform: uppercase;
+        padding: 10px 0;
+    }
+    
+    &__dropprice {
+        font-size: 12px;
+        color: $color-select;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    
+    &__dropcost {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-black;
+        text-transform: uppercase;
+        margin-top: 19px;
+        margin-bottom: 32px;
+    }
+    
+    &__dropbutton {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: $color-black;
+        text-transform: uppercase;
+        line-height: 50px;
+        height: 50px;
+        background-color: $color-white;
+        border: 1px solid $color-platinum;
+        margin-top: 10px;
+        transition: all 0.3s;
+        &:hover{
+            border: 1px solid $color-select;
+            color: $color-select;
         }
     }
 }
 
-.header__cart-drop {
-    position: relative;
-}
 
-.header__drop {
-    background-color: $color-white;
-    border-radius: 5px;
-    padding: 5px 15px;
-    position: absolute;
-    top: 52px;
-    height: 430px;
-    width: 262px;
-    left: -58px;
-    display: none;
-}
-
-.header__cart-drop:hover .header__drop {
-    display: block;
-}
-
-.header__dropbox {
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid $color-platinum;
-    overflow: hidden;
-}
-
-.header__dropcontent {
-    margin-left: 14px;
-}
-
-.header__dropname {
-    font-size: 12px;
-    font-weight: bold;
-    color: $color-black;
-    text-transform: uppercase;
-    padding: 10px 0;
-}
-
-.header__dropprice {
-    font-size: 12px;
-    color: $color-select;
-    text-transform: uppercase;
-    padding-top: 10px;
-}
-
-.header__dropcost {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: bold;
-    color: $color-black;
-    text-transform: uppercase;
-    margin-top: 19px;
-    margin-bottom: 32px;
-}
-
-.header__dropbutton {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: $color-black;
-    text-transform: uppercase;
-    line-height: 50px;
-    height: 50px;
-    background-color: $color-white;
-    border: 1px solid $color-platinum;
-    margin-top: 10px;
-    transition: all 0.3s;
-    &:hover{
-        border: 1px solid $color-select;
-        color: $color-select;
-    }
-}
 
 .browse {
     padding-left: 15px;
@@ -141,6 +146,12 @@ a {
     color: $color-black;
     letter-spacing: 0.03em;
     line-height: 32px;
+    transition: all 0.3s;
+    &:hover{
+        color: $color-white;
+        background-color: $color-select;
+        transform: scale(1.05);
+    }
 }
 
 .input_text {
@@ -153,6 +164,10 @@ a {
     font-family: 'Lato';
     padding-left: 15px;
     padding-right: 124px;
+    &:focus{
+        box-shadow: 0 0 5px $color-select;
+        outline: 1px solid $color-select;
+    }
 }
 
 .search_button {
@@ -164,6 +179,10 @@ a {
     justify-content: center;
     align-content: center;
     padding: 9px;
+    &:focus{
+        box-shadow: 0 0 5px $color-select;
+        outline: 1px solid $color-select;
+    }
 }
 
 .logo {
@@ -231,6 +250,7 @@ a {
             -o-transform: scale(1.1);
             -ms-transform: scale(1.1);
             transform: scale(1.1);
+            color: $color-select;
         }
     }
 
@@ -244,6 +264,10 @@ a {
 
     &__list:hover .drop_last {
         right: 0;
+    }
+
+    &__list a:hover {
+        color: $color-select;
     }
 }
 
@@ -284,6 +308,7 @@ a {
         color: $color-dark-grey;
         letter-spacing: 0.03em;
         line-height: 28px;
+        transition: all 0.3s;
     }
 }
 
@@ -693,6 +718,12 @@ a {
         text-align: center;
         letter-spacing: 0.03em;
         line-height: 46px;
+        transition: all 0.3s;
+        &:hover{
+            box-shadow: 0 0 5px $color-select;
+            background-color: $color-white;
+            color: $color-select;
+        }
     }
 
     &__email {
@@ -708,6 +739,9 @@ a {
         padding-left: 28px;
         width: 255px;
         text-align: inherit;
+        &:focus{
+            outline: 1px solid $color-select;
+        }
     }
 
     &__human-img {
@@ -771,6 +805,10 @@ a {
         color: $color-dark-grey;
         letter-spacing: 0.03em;
         padding-bottom: 23px;
+        transition: all 0.3s;
+        &:hover{
+            color: $color-select;
+        }
     }
 
     &__line {
@@ -817,6 +855,7 @@ a {
 .fa:hover {
     background-color: $color-select;
     color: $color-white;
+    transform: scale(1.1);
 }
 
 //styles for single_page.html

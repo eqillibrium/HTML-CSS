@@ -54,6 +54,84 @@ a {
     }
 }
 
+.header__cart-drop {
+    position: relative;
+}
+
+.header__drop {
+    background-color: $color-white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    position: absolute;
+    top: 52px;
+    height: 430px;
+    width: 262px;
+    left: -58px;
+    display: none;
+}
+
+.header__cart-drop:hover .header__drop {
+    display: block;
+}
+
+.header__dropbox {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $color-platinum;
+    overflow: hidden;
+}
+
+.header__dropcontent {
+    margin-left: 14px;
+}
+
+.header__dropname {
+    font-size: 12px;
+    font-weight: bold;
+    color: $color-black;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.header__dropprice {
+    font-size: 12px;
+    color: $color-select;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.header__dropcost {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    color: $color-black;
+    text-transform: uppercase;
+    margin-top: 19px;
+    margin-bottom: 32px;
+}
+
+.header__dropbutton {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: $color-black;
+    text-transform: uppercase;
+    line-height: 50px;
+    height: 50px;
+    background-color: $color-white;
+    border: 1px solid $color-platinum;
+    margin-top: 10px;
+    transition: all 0.3s;
+    &:hover{
+        border: 1px solid $color-select;
+        color: $color-select;
+    }
+}
+
 .browse {
     padding-left: 15px;
     padding-right: 26px;
@@ -1275,9 +1353,10 @@ a {
     flex-wrap: wrap;
     margin-top: 59px;
 
-    &__card{
+    &__card {
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             box-shadow: 0 0 10px $color-platinum;
         }
     }
@@ -1350,6 +1429,7 @@ a {
         font-weight: 400;
         border-radius: 3px;
         transition: all 0.3s;
+
         &:hover {
             color: $color-select;
             font-weight: 600;
@@ -1375,7 +1455,8 @@ a {
         padding-left: 45px;
         padding-right: 45px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             background-color: $color-select;
             color: $color-white;
         }
@@ -1400,7 +1481,8 @@ a {
         border-bottom: 1px solid $color-platinum;
         margin-bottom: 18px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             color: $color-select;
             transform: scale(1.05);
         }
@@ -1412,7 +1494,8 @@ a {
         line-height: 33px;
         padding-left: 17px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             color: $color-select;
             transform: scale(1.05);
         }
@@ -1451,7 +1534,8 @@ a {
         margin-top: 3px;
         margin-right: 10px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             color: $color-select;
             transform: scale(1.05);
         }
@@ -1604,14 +1688,15 @@ a {
         align-items: center;
         justify-content: center;
         transition: all 0.3s;
-        &:hover .advantages__box__img{
+
+        &:hover .advantages__box__img {
             -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
         }
 
         &__img {
             margin-top: 89px;
-            
+
         }
 
         &__h1 {
@@ -1625,7 +1710,8 @@ a {
             transform: scale(1);
             margin-top: 32px;
             transition: all 0.3s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
             }
         }
@@ -1643,7 +1729,8 @@ a {
             margin-top: 17px;
             margin-bottom: 106px;
             transition: all 0.3s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
             }
         }

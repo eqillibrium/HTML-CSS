@@ -1225,6 +1225,9 @@ a {
   padding-bottom: 23px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__link:hover {
@@ -2199,6 +2202,9 @@ a {
   margin-bottom: 18px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .category__head:hover {
@@ -2214,6 +2220,9 @@ a {
   padding-left: 17px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .category__link:hover {
@@ -2224,6 +2233,9 @@ a {
 
 .category__link-last {
   padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .trending {
@@ -2259,6 +2271,9 @@ a {
   margin-right: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .trending__link:hover {
@@ -2716,6 +2731,9 @@ a {
   line-height: 72px;
   text-transform: uppercase;
   border-bottom: 1px solid #e8e8e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .forms__first-link {

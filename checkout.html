@@ -11,22 +11,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header center">
+    <div class="header center">
         <div class="header__left">
             <a class="logo" href="index.html">
                 <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="accent">D</span>
             </a>
             <form class="header__form" action="#">
-                <div class="browse">Browse</div>
+                <div class="browse">Browse <i class="fa fa-sort-desc browse__icon" aria-hidden="true"></i></div>
                 <input type="text" value="Search for Item..." class="input_text">
                 <button class="search_button"><img src="img/search.png" alt="search"></button>
             </form>
         </div>
         <div class="header__right">
-            <a href="#"><img class="header__cart" src="img/cart.png" alt="cart"></a>
-            <a href="#" class="button">My Account</a>
+            <div class="header__cart-drop">
+                <a href="#"><img class="header__cart" src="img/cart.png" alt="cart"></a>
+                <div class="header__drop">
+                    <div class="header__dropbox">
+                        <img src="img/headerdropimg1.jpg" class="header__dropimg" alt="">
+                        <div class="header__dropcontent">
+                            <h3 class="header__dropname">Rebox Zane</h3>
+                            <img src="img/headerdropstars.jpg" alt="">
+                            <p class="header__dropprice">1 x $250</p>
+                        </div>
+                    </div>
+                    <div class="header__dropbox">
+                        <img src="img/headerdropimg2.jpg" class="header__dropimg" alt="">
+                        <div class="header__dropcontent">
+                            <h3 class="header__dropname">Rebox Zane</h3>
+                            <img src="img/headerdropstars.jpg" alt="">
+                            <p class="header__dropprice">1 x $250</p>
+                        </div>
+                        </div>
+                        <div class="header__dropcost">
+                            <p>total</p>
+                            <p>550</p>
+                        </div>
+                        <a href="" class="header__dropbutton">Checkout</a>
+                        <a href="" class="header__dropbutton">Go to cart</a>
+                    
+                </div>
+            </div>
+            <a href="#" class="button">My Account <i class="fa fa-sort-desc button__icon" aria-hidden="true"></i></a>
+            </div>
         </div>
-</div>
 <div class="nav">
         <ul class="menu center">
             <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
@@ -93,7 +120,7 @@
             <a href="index.html">
                 <li class="nav-line__link">Home/ </li>
             </a>
-            <a href="#">
+            <a href="product.html">
                 <li class="nav-line__link">Men/ </li>
             </a>
             <a href="#">
@@ -196,16 +223,16 @@
                 <a href="index.html">
                     <li class="footer__link">Home</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Shop</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">About</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">How It Works</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Contact</li>
                 </a>
             </ul>
@@ -213,19 +240,19 @@
         <div class="footer__right-block">
             <h1 class="footer__right-h1">INFORMATION</h1>
             <ul class="footer__list">
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Tearms & Condition</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Privacy Policy</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">How to Buy</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">How to Sell</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Promotion</li>
                 </a>
             </ul>
@@ -233,34 +260,35 @@
         <div class="footer__right-block">
             <h1 class="footer__right-h1">SHOP CATEGORY</h1>
             <ul class="footer__list">
-                <a href="">
+                <a href="product.html">
                     <li class="footer__link">Men</li>
                 </a>
-                <a href="">
+                <a href="single_page.html">
                     <li class="footer__link">Women</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Child</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Apparel</li>
                 </a>
-                <a href="">
+                <a href="#">
                     <li class="footer__link">Brows All</li>
                 </a>
             </ul>
         </div>
     </div>
+
 </div>
 <div class="footer__line center">
     <div class="rights"> &copy;2017 Brand All Rights Reserved.</div>
     <div id="light" class="social">
         <ul class="social__list normal">
-            <li><a href="" class="btn-gradient facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="" class="btn-gradient twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="" class="btn-gradient google-plus"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="" class="btn-gradient instagram"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="" class="btn-gradient linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/" class="btn-gradient facebook"><i class="fa fa-facebook social__icon"></i></a></li>
+            <li><a href="https://twitter.com/explore" class="btn-gradient twitter"><i class="fa fa-twitter social__icon"></i></a></li>
+            <li><a href="https://www.google.ru/" class="btn-gradient google-plus"><i class="fa fa-google-plus social__icon"></i></a></li>
+            <li><a href="https://www.instagram.com" class="btn-gradient instagram"><i class="fa fa-instagram social__icon"></i></a></li>
+            <li><a href="https://www.linkedin.com" class="btn-gradient linkedin"><i class="fa fa-linkedin social__icon"></i></a></li>
         </ul>
     </div>
 </div>

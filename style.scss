@@ -852,7 +852,7 @@ a {
         letter-spacing: 0.03em;
         padding-bottom: 23px;
         transition: all 0.3s;
-
+        display: flex;
         &:hover {
             color: $color-select;
         }
@@ -1647,6 +1647,7 @@ a {
         border-bottom: 1px solid $color-platinum;
         margin-bottom: 18px;
         transition: all 0.3s;
+        display: flex;
 
         &:hover {
             color: $color-select;
@@ -1660,6 +1661,7 @@ a {
         line-height: 33px;
         padding-left: 17px;
         transition: all 0.3s;
+        display: flex;
 
         &:hover {
             color: $color-select;
@@ -1669,6 +1671,7 @@ a {
 
     &__link-last {
         padding-bottom: 10px;
+        display: flex;
     }
 }
 
@@ -1700,6 +1703,7 @@ a {
         margin-top: 3px;
         margin-right: 10px;
         transition: all 0.3s;
+        display: flex;
 
         &:hover {
             color: $color-select;
@@ -2097,6 +2101,7 @@ a {
         line-height: 72px;
         text-transform: uppercase;
         border-bottom: 1px solid $color-platinum;
+        display: flex;
     }
 
     &__first-link {

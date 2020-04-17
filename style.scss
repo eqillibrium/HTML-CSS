@@ -1,5 +1,6 @@
 @import "vars";
 @import "mixin";
+@import "anim";
 
 * {
     margin: 0;
@@ -43,7 +44,7 @@ a {
     &__cart {
         margin-right: 26px;
     }
-    
+
     &__cart-drop {
         position: relative;
         width: 100px;
@@ -52,7 +53,7 @@ a {
         align-items: center;
         height: 50px;
     }
-    
+
     &__drop {
         background-color: $color-white;
         border-radius: 5px;
@@ -61,21 +62,22 @@ a {
         top: 50px;
         height: 430px;
         width: 262px;
-        left: -58px;
+        left: 0px;
         display: none;
     }
 
-    &__dropimg{
+    &__dropimg {
         transition: all 0.3s;
+
         &:hover {
             transform: rotate(15deg);
         }
     }
-    
+
     &__cart-drop:hover .header__drop {
         display: block;
     }
-    
+
     &__dropbox {
         display: flex;
         padding-top: 15px;
@@ -83,11 +85,11 @@ a {
         border-bottom: 1px solid $color-platinum;
         overflow: hidden;
     }
-    
+
     &__dropcontent {
         margin-left: 14px;
     }
-    
+
     &__dropname {
         font-size: 12px;
         font-weight: bold;
@@ -95,14 +97,14 @@ a {
         text-transform: uppercase;
         padding: 10px 0;
     }
-    
+
     &__dropprice {
         font-size: 12px;
         color: $color-select;
         text-transform: uppercase;
         padding-top: 10px;
     }
-    
+
     &__dropcost {
         display: flex;
         justify-content: space-between;
@@ -113,7 +115,7 @@ a {
         margin-top: 19px;
         margin-bottom: 32px;
     }
-    
+
     &__dropbutton {
         display: flex;
         align-content: center;
@@ -128,29 +130,52 @@ a {
         border: 1px solid $color-platinum;
         margin-top: 10px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             border: 1px solid $color-select;
             color: $color-select;
         }
     }
 }
 
-
-
 .browse {
     padding-left: 15px;
-    padding-right: 26px;
-    background-color: #e8e8e8;
+    background-color: $color-white-smoke;
     font-size: 14px;
     font-weight: 300;
     color: $color-black;
     letter-spacing: 0.03em;
     line-height: 32px;
     transition: all 0.3s;
-    &:hover{
+
+    &:hover {
         color: $color-white;
         background-color: $color-select;
-        transform: scale(1.05);
+        box-shadow: 0 0 5px $color-select;
+    }
+
+    &:hover .browse__icon::before {
+        color: $color-white;
+    }
+
+    &__icon {
+        font-size: 14px;
+        color: $color-deep-grey;
+        letter-spacing: 0.03em;
+        line-height: 32px;
+        height: 32px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 2px;
+        border-right: 1px solid $color-platinum;
+
+        &::before {
+            font-size: 14px;
+            color: $color-dark-grey;
+            letter-spacing: 0.03em;
+            line-height: 32px;
+            height: 32px;
+        }
     }
 }
 
@@ -164,7 +189,8 @@ a {
     font-family: 'Lato';
     padding-left: 15px;
     padding-right: 124px;
-    &:focus{
+
+    &:focus {
         box-shadow: 0 0 5px $color-select;
         outline: 1px solid $color-select;
     }
@@ -179,7 +205,8 @@ a {
     justify-content: center;
     align-content: center;
     padding: 9px;
-    &:focus{
+
+    &:focus {
         box-shadow: 0 0 5px $color-select;
         outline: 1px solid $color-select;
     }
@@ -194,6 +221,7 @@ a {
     letter-spacing: 0.03em;
     line-height: 32px;
     text-transform: uppercase;
+    font-weight: 300;
 
     &__img {
         margin-right: 13px;
@@ -221,11 +249,22 @@ a {
     transition: all 0.3s;
 
     &:hover {
-        -moz-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        -o-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
+        background-color: $color-white;
+        box-shadow: 0 0 5px $color-select;
+        color: $color-deep-grey;
+        border-radius: 5px;
+    }
+
+    &__icon::before {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 1);
+        padding-left: 10px;
+        letter-spacing: 0.03em;
+        line-height: 38px;
+    }
+
+    &:hover .button__icon::before {
+        color: $color-deep-grey;
     }
 }
 
@@ -243,14 +282,19 @@ a {
         line-height: 26px;
         text-transform: uppercase;
         transition: all 0.3s;
+        border-bottom: 2px solid $color-white;
 
         &:hover {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -o-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            transform: scale(1.1);
             color: $color-select;
+            border-bottom: 2px solid $color-select;
+        }
+
+        &:active {
+            border-bottom: 2px solid $color-select;
+        }
+
+        &:focus-within {
+            border-bottom: 2px solid $color-select;
         }
     }
 
@@ -719,7 +763,8 @@ a {
         letter-spacing: 0.03em;
         line-height: 46px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             box-shadow: 0 0 5px $color-select;
             background-color: $color-white;
             color: $color-select;
@@ -739,7 +784,8 @@ a {
         padding-left: 28px;
         width: 255px;
         text-align: inherit;
-        &:focus{
+
+        &:focus {
             outline: 1px solid $color-select;
         }
     }
@@ -806,7 +852,8 @@ a {
         letter-spacing: 0.03em;
         padding-bottom: 23px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             color: $color-select;
         }
     }
@@ -836,26 +883,28 @@ a {
     line-height: 42px;
 }
 
-.social__list {
-    display: flex;
-}
+.social {
+    &__list {
+        display: flex;
+    }
 
-.fa {
-    height: 32px;
-    width: 32px;
-    line-height: 30px;
-    background-color: $color-white;
-    margin: 4px;
-    text-align: center;
-    border-radius: 2px;
-    color: $color-dark-grey;
-    transition: all 0.3s;
-}
+    &__icon {
+        height: 32px;
+        width: 32px;
+        line-height: 30px;
+        background-color: $color-white;
+        margin: 4px;
+        text-align: center;
+        border-radius: 2px;
+        color: $color-dark-grey;
+        transition: all 0.3s;
+    }
 
-.fa:hover {
-    background-color: $color-select;
-    color: $color-white;
-    transform: scale(1.1);
+    &__icon:hover {
+        background-color: $color-select;
+        color: $color-white;
+        transform: scale(1.1);
+    }
 }
 
 //styles for single_page.html
@@ -892,6 +941,11 @@ a {
         text-align: center;
         line-height: 20px;
         text-transform: uppercase;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $color-select;
+        }
     }
 
     &__link-active {
@@ -910,15 +964,14 @@ a {
     background-color: $color-white-smoke;
     min-height: 777px;
     border: 1px solid $color-platinum;
-    position: relative;
 }
 
 .model-box {
-    position: relative;
 
     &__model {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__photo {
@@ -932,12 +985,18 @@ a {
         font-size: 24px;
         color: $color-white;
         line-height: 47px;
-        position: absolute;
         height: 47px;
         width: 47px;
         background-color: rgba(42, 42, 42, 0.15);
-        top: 365px;
         text-align: center;
+        border-radius: 2px;
+        padding: 15px 20px;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-select;
+            box-shadow: 0 0 5px $color-select;
+            color: $color-white;
+        }
     }
 }
 
@@ -945,7 +1004,7 @@ a {
     &__name {
         font-size: 24px;
         font-weight: 900;
-        color: $color-dark-grey;
+        color: $color-deep-grey;
         text-align: center;
         line-height: 20px;
         text-transform: uppercase;
@@ -963,23 +1022,43 @@ a {
         height: auto;
         width: auto;
     }
-}
 
-.item__name {
-    font-size: 14px;
-    color: $color-dark-grey;
-    text-transform: uppercase;
-    margin-top: 16px;
-    margin-bottom: 13px;
-    padding-left: 15px;
-}
+    &__item-name {
+        font-size: 14px;
+        color: $color-deep-grey;
+        text-transform: uppercase;
+        margin-top: 16px;
+        margin-bottom: 13px;
+        padding-left: 15px;
+        font-weight: 600;
+    }
 
-.item__price {
-    font-size: 16px;
-    font-weight: bold;
-    color: $color-select;
-    text-transform: uppercase;
-    padding-left: 15px;
+    &__item-price {
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-select;
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+
+    &__img-box {
+        background-color: $color-platinum;
+        height: 280px;
+        width: 261px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+
+        &:hover {
+            filter: brightness(80%);
+            box-shadow: 0 0 5px $color-platinum;
+        }
+    }
+
+    &__img {
+        height: auto;
+    }
 }
 
 .product-card {
@@ -1043,7 +1122,7 @@ a {
 .card__prod-name {
     font-size: 18px;
     font-weight: 900;
-    color: $color-dark-grey;
+    color: $color-deep-grey;
     line-height: 24px;
     text-transform: uppercase;
     padding-bottom: 55px;
@@ -1145,6 +1224,11 @@ a {
     background-color: $color-white;
     border: 1px solid $color-select;
     margin-top: 25px;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 0 0 5px $color-select;
+    }
 }
 
 .button__basket {
@@ -1251,6 +1335,13 @@ a {
         line-height: 50px;
         text-align: center;
         border: 1px solid $color-platinum;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $color-select;
+            color: $color-white;
+            box-shadow: 0 0 5px $color-select;
+            border: 1px solid $color-select;
+        }
     }
 
     &__list {
@@ -1262,6 +1353,26 @@ a {
 
     &__h3 {
         @include shop-cart__h3-font ();
+    }
+
+    &__h3mod1{
+        margin-right: 430px;
+    }
+
+    &__h3mod2{
+        margin-right: 62px;
+    }
+
+    &__h3mod3{
+        margin-right: 70px;
+    }
+
+    &__h3mod4{
+        margin-right: 64px;
+    }
+
+    &__h3mod5{
+        margin-right: 57px;
     }
 
     &__heading {
@@ -1286,13 +1397,14 @@ a {
 
 .form__cell {
     height: 45px;
-    width: 355px;
+    width: 335px;
     font-size: 13px;
     font-weight: 300;
     color: $color-light-grey;
     border: 1px solid $color-platinum;
     line-height: 45px;
     margin-top: 22px;
+    padding-left: 18px;
 
 }
 
@@ -1312,6 +1424,14 @@ a {
     border: 1px solid $color-platinum;
     background-color: $color-white;
     margin-top: 23px;
+    font-weight: 700;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $color-select;
+        border: 1px solid $color-select;
+        box-shadow: 0 0 5px $color-select;
+        color: $color-white;
+    }
 }
 
 .forms__center-fieldset {
@@ -1345,6 +1465,12 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 17px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $color-white;
+        color: $color-deep-grey;
+        box-shadow: 0 0 5px $color-select;
+    }
 }
 
 .forms__right-content {
@@ -1397,6 +1523,7 @@ a {
 
         &:hover {
             box-shadow: 0 0 10px $color-platinum;
+            filter: brightness(85%);
         }
     }
 

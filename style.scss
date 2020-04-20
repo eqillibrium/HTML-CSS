@@ -853,6 +853,7 @@ a {
         padding-bottom: 23px;
         transition: all 0.3s;
         display: flex;
+
         &:hover {
             color: $color-select;
         }
@@ -992,7 +993,8 @@ a {
         border-radius: 2px;
         padding: 15px 20px;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             background-color: $color-select;
             box-shadow: 0 0 5px $color-select;
             color: $color-white;
@@ -1111,12 +1113,14 @@ a {
     background-color: $color-platinum;
     width: 42px;
     line-height: 30px;
+    display: flex;
 }
 
 .card__part-link-active {
     height: 3px;
     background-color: $color-select;
     width: 63px;
+    display: flex;
 }
 
 .card__prod-name {
@@ -1177,77 +1181,68 @@ a {
     line-height: 24px;
 }
 
-.option__box {
+.card-option {
     display: flex;
-    justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 60px;
-}
-
-.option__color {
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(47, 47, 47, 1);
-    line-height: 24px;
-    width: 144px;
-}
-
-.option__size {
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(47, 47, 47, 1);
-    line-height: 24px;
-    width: 144px;
-}
-
-.option__quantity {
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(47, 47, 47, 1);
-    line-height: 24px;
-    width: 144px;
-}
-
-.card__button {
-    font-size: 16px;
-    font-weight: bold;
-    color: $color-select;
-    text-align: right;
-    letter-spacing: 0.03em;
-    line-height: 55px;
-    margin-left: 300px;
-    margin-right: 300px;
-    display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-    background-color: $color-white;
-    border: 1px solid $color-select;
-    margin-top: 25px;
-    transition: all 0.3s;
 
-    &:hover {
-        box-shadow: 0 0 5px $color-select;
+    &__cell-box {
+        display: flex;
+        width: 537px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 63px;
+        margin-bottom: 28px;
     }
-}
 
-.button__basket {
-    padding-right: 15px;
-}
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-.option__cell {
-    height: 35px;
-    width: 144px;
-    background-color: $color-white;
-    border: 1px solid $color-platinum;
-}
+    &__button-box {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
 
-.option__form {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 10px;
+    &__button {
+        height: 55px;
+        width: 537px;
+        border: 1px solid $color-select;
+        background-color: $color-white;
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-select;
+        text-align: center;
+        line-height: 55px;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 0 0 5px $color-select;
+        }
+    }
+
+    &__legend {
+        font-size: 14px;
+        font-weight: bold;
+        color: $color-black;
+        line-height: 24px;
+    }
+
+    &__cell {
+        height: 35px;
+        width: 144px;
+        border: 1px solid $color-platinum;
+        background-color: $color-white;
+    }
+
+    &__basket-img {
+        
+    }
 }
 
 .position {
@@ -1289,6 +1284,12 @@ a {
         text-transform: uppercase;
         font-weight: 700;
         padding-bottom: 38px;
+        display: flex;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $color-select;
+        }
     }
 
     &__info-span {
@@ -1315,6 +1316,18 @@ a {
         line-height: 30px;
         border: 1px solid $color-platinum;
         text-align: center;
+        transition: all 0.3s;
+        outline: none;
+
+        &:active {
+            border: 1px solid $color-select;
+            box-shadow: 0 0 5px $color-select;
+        }
+
+        &:focus {
+            border: 1px solid $color-select;
+            box-shadow: 0 0 5px $color-select;
+        }
     }
 
     &__buttons {
@@ -1335,12 +1348,32 @@ a {
         line-height: 50px;
         text-align: center;
         border: 1px solid $color-platinum;
+        background-color: $color-white;
+        outline: none;
         transition: all 0.3s;
-        &:hover{
+
+        &:hover {
             background-color: $color-select;
             color: $color-white;
             box-shadow: 0 0 5px $color-select;
             border: 1px solid $color-select;
+        }
+    }
+
+    &__none-img {
+        transition: all 0.3s;
+        border: none;
+        outline: none;
+        background-color: $color-white;
+
+        &:hover {
+            transform: scale(1.1) rotate(25deg);
+        }
+
+        &:active {
+            border: none;
+            outline: none;
+            background-color: $color-white;
         }
     }
 
@@ -1355,23 +1388,23 @@ a {
         @include shop-cart__h3-font ();
     }
 
-    &__h3mod1{
+    &__h3mod1 {
         margin-right: 430px;
     }
 
-    &__h3mod2{
+    &__h3mod2 {
         margin-right: 62px;
     }
 
-    &__h3mod3{
+    &__h3mod3 {
         margin-right: 70px;
     }
 
-    &__h3mod4{
+    &__h3mod4 {
         margin-right: 64px;
     }
 
-    &__h3mod5{
+    &__h3mod5 {
         margin-right: 57px;
     }
 
@@ -1384,131 +1417,132 @@ a {
 
 .forms {
     margin-top: 63px;
-
     display: flex;
-}
 
-.forms__h2 {
-    font-size: 16px;
-    font-weight: bold;
-    color: $color-black;
-    text-transform: uppercase;
-}
-
-.form__cell {
-    height: 45px;
-    width: 335px;
-    font-size: 13px;
-    font-weight: 300;
-    color: $color-light-grey;
-    border: 1px solid $color-platinum;
-    line-height: 45px;
-    margin-top: 22px;
-    padding-left: 18px;
-
-}
-
-.forms__left-fieldset {
-    display: flex;
-}
-
-.form__button {
-    font-size: 11px;
-    font-weight: bold;
-    color: $color-deep-grey;
-    text-transform: uppercase;
-    height: 35px;
-    width: 100px;
-    line-height: 35px;
-    text-align: center;
-    border: 1px solid $color-platinum;
-    background-color: $color-white;
-    margin-top: 23px;
-    font-weight: 700;
-    transition: all 0.3s;
-    &:hover{
-        background-color: $color-select;
-        border: 1px solid $color-select;
-        box-shadow: 0 0 5px $color-select;
-        color: $color-white;
+    &__h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-black;
+        text-transform: uppercase;
     }
-}
 
-.forms__center-fieldset {
-    display: flex;
-    margin-left: 36px;
-}
+    &__cell {
+        height: 45px;
+        width: 335px;
+        font-size: 13px;
+        font-weight: 300;
+        color: $color-light-grey;
+        border: 1px solid $color-platinum;
+        line-height: 45px;
+        margin-top: 22px;
+        padding-left: 18px;
 
-.forms__center-fieldset-label {
-    margin-top: 28px;
-}
+    }
 
-.forms__right {
-    height: 214px;
-    width: 360px;
-    background-color: $color-white-smoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-}
+    &__left-fieldset {
+        display: flex;
+    }
 
-.forms__right-button {
-    height: 50px;
-    width: 273px;
-    line-height: 50px;
-    text-align: center;
-    color: $color-white-smoke;
-    background-color: $color-select;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 17px;
-    transition: all 0.3s;
-    &:hover{
-        background-color: $color-white;
+    &__button {
+        font-size: 11px;
+        font-weight: bold;
         color: $color-deep-grey;
-        box-shadow: 0 0 5px $color-select;
+        text-transform: uppercase;
+        height: 35px;
+        width: 100px;
+        line-height: 35px;
+        text-align: center;
+        border: 1px solid $color-platinum;
+        background-color: $color-white;
+        margin-top: 23px;
+        font-weight: 700;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $color-select;
+            border: 1px solid $color-select;
+            box-shadow: 0 0 5px $color-select;
+            color: $color-white;
+        }
     }
-}
 
-.forms__right-content {
-    border-bottom: 1px solid $color-platinum;
-    width: 100%;
-    text-align: end;
-}
+    &__center-fieldset {
+        display: flex;
+        margin-left: 36px;
+    }
 
-.forms__right-p {
-    font-family: 'Lato';
-    font-size: 11px;
-    color: $color-black;
-    text-transform: uppercase;
-    padding-bottom: 14px;
-}
+    &__center-fieldset-label {
+        margin-top: 28px;
+    }
 
-.forms__right-h1 {
-    padding-bottom: 22px;
-    font-size: 16px;
-    font-weight: bold;
-    color: $color-black;
-    text-transform: uppercase;
-}
+    &__right {
+        height: 214px;
+        width: 360px;
+        background-color: $color-white-smoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
 
-.forms__right-span {
-    font-size: 16px;
-    font-weight: bold;
-    color: $color-select;
-    text-transform: uppercase;
-}
+    &__right-button {
+        height: 50px;
+        width: 273px;
+        line-height: 50px;
+        text-align: center;
+        color: $color-white-smoke;
+        background-color: $color-select;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 17px;
+        transition: all 0.3s;
 
-.forms__right-box {
-    width: 273px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+        &:hover {
+            background-color: $color-white;
+            color: $color-deep-grey;
+            box-shadow: 0 0 5px $color-select;
+        }
+    }
+
+    &__right-content {
+        border-bottom: 1px solid $color-platinum;
+        width: 100%;
+        text-align: end;
+    }
+
+    &__right-p {
+        font-family: 'Lato';
+        font-size: 11px;
+        color: $color-black;
+        text-transform: uppercase;
+        padding-bottom: 14px;
+    }
+
+    &__right-h1 {
+        padding-bottom: 22px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+
+    &__right-span {
+        font-size: 16px;
+        font-weight: bold;
+        color: $color-select;
+        text-transform: uppercase;
+    }
+
+    &__right-box {
+        width: 273px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 //styles for product 
@@ -1921,6 +1955,11 @@ a {
     &__details {
         display: flex;
         width: 100%;
+        outline: none;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__shipping {
@@ -1936,6 +1975,12 @@ a {
         text-transform: uppercase;
         margin-bottom: 39px;
         display: block;
+        outline: none;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $color-select;
+        }
 
         &::-webkit-details-marker {
             display: none;
@@ -2059,6 +2104,12 @@ a {
         background-color: $color-white;
         border: 1px solid $color-platinum;
         margin-bottom: 20px;
+        outline: none;
+
+        &:focus {
+            outline: 1px solid $color-select;
+            box-shadow: 0 0 5px $color-select;
+        }
     }
 
     &__required-text {
@@ -2102,6 +2153,11 @@ a {
         text-transform: uppercase;
         border-bottom: 1px solid $color-platinum;
         display: flex;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $color-select;
+        }
     }
 
     &__first-link {

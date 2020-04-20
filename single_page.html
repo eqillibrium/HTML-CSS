@@ -163,33 +163,35 @@
                 <div class="card-option">
                     <form action="#" class="card-option__form">
                         <div class="card-option__cell-box">
-                            <div>
+                            <fieldset>
                                 <legend class="card-option__legend">CHOOSE COLOR</legend>
-                                <input list="<идентификатор>" required class="card-option__cell">
-                                <datalist id="<идентификатор>">
-                                    <option value="Текст1">
-                                    <option value="Текст2">
+                                <input list="card-option__datalist1" class="card-option__cell card-option__cell_color"
+                                    required>
+                                <datalist id="card-option__datalist1">
+                                    <option value="red">
+                                    <option value="black">
                                 </datalist>
-                            </div>
-                            <div>
-                                <legend class="card-option__legend">CHOOSE COLOR</legend>
-                                <input list="<идентификатор>" required class="card-option__cell">
-                                <datalist id="<идентификатор>">
-                                    <option value="Текст1">
-                                    <option value="Текст2">
+                            </fieldset>
+                            <fieldset>
+                                <legend class="card-option__legend">CHOOSE SIZE</legend>
+                                <input list="card-option__datalist2" required class="card-option__cell">
+                                <datalist id="card-option__datalist2">
+                                    <option value="XXL">
+                                    <option value="XL">
                                 </datalist>
-                            </div>
-                            <div>
-                                <legend class="card-option__legend">CHOOSE COLOR</legend>
-                                <input list="<идентификатор>" required class="card-option__cell">
-                                <datalist id="<идентификатор>">
-                                    <option value="Текст1">
-                                    <option value="Текст2">
-                                </datalist>
-                            </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="card-option__legend">QUANTITY</legend>
+                                <input type="number" required class="card-option__cell" min="1" max="99">
+                            </fieldset>
                         </div>
                         <div class="card-option__button-box">
-                            <button type="submit" class="card-option__button"> <img src="img/basket.png" alt="basket" class="card-option__basket-img">Add to Cart</button>
+                            <fieldset>
+                            <button type="submit" class="card-option__button" value="Add to Cart" name="Add to Cart">
+                                <img src="img/basket.png" alt="basket" class="card-option__basket-img">
+                                Add to Cart
+                            </button>
+                        </fieldset>
                         </div>
                     </form>
                 </div>

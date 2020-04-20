@@ -1689,6 +1689,16 @@ a {
   color: #f16d7f;
   text-align: center;
   line-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1707,9 +1717,34 @@ a {
 
 .card-option__cell {
   height: 35px;
-  width: 144px;
+  width: 124px;
   border: 1px solid #e8e8e8;
   background-color: white;
+  font-family: 'Lato';
+  font-size: 14px;
+  color: #a0a0a0;
+  line-height: 24px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.card-option__cell_color {
+  background: url(img/red-color.jpg) no-repeat;
+  background-size: 15px 15px;
+  background-position-x: 15px;
+  background-position-y: center;
+  padding-left: 40px;
+  width: 104px;
+}
+
+.card-option__cell:focus {
+  outline: 2px outset #f16d7f;
+  -webkit-box-shadow: 0 0 5px #f16d7f;
+          box-shadow: 0 0 5px #f16d7f;
+}
+
+.card-option__basket-img {
+  margin-right: 15px;
 }
 
 .position {

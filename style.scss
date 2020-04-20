@@ -1219,6 +1219,10 @@ a {
         color: $color-select;
         text-align: center;
         line-height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
         transition: all 0.3s;
 
         &:hover {
@@ -1235,13 +1239,31 @@ a {
 
     &__cell {
         height: 35px;
-        width: 144px;
+        width: 124px;
         border: 1px solid $color-platinum;
         background-color: $color-white;
+        font-family: 'Lato';
+        font-size: 14px;
+        color: $color-dark-grey;
+        line-height: 24px;
+        padding-left: 20px;
+        outline: none;
+        &_color {
+            background: url(img/red-color.jpg) no-repeat;
+            background-size: 15px 15px;
+            background-position-x: 15px;
+            background-position-y: center;
+            padding-left: 40px;
+            width: 104px;
+        }
+        &:focus{
+            outline: 2px outset $color-select;
+            box-shadow: 0 0 5px $color-select;
+        }
     }
 
     &__basket-img {
-        
+        margin-right: 15px;
     }
 }
 
@@ -1436,7 +1458,6 @@ a {
         line-height: 45px;
         margin-top: 22px;
         padding-left: 18px;
-
     }
 
     &__left-fieldset {

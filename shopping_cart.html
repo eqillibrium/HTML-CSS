@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>shopping-cart</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet prefetch'
@@ -46,8 +46,8 @@
                             <p>total</p>
                             <p>550</p>
                         </div>
-                        <a href="" class="header__dropbutton">Checkout</a>
-                        <a href="" class="header__dropbutton">Go to cart</a>
+                        <a href="checkout.html" class="header__dropbutton">Checkout</a>
+                        <a href="shopping_cart.html" class="header__dropbutton">Go to cart</a>
                     
                 </div>
             </div>
@@ -139,61 +139,61 @@
         <div class="shop-cart">
             <div class="shop-cart__img"><img src="img/shopping-cart/product.jpg" alt=""></div>
             <div class="shop-cart__info">
-                <h3 class="shop-cart__info-h3">Mango People T-shirt</h3>
+                <a href="#" class="shop-cart__info-h3">Mango People T-shirt</a>
                 <p class="shop-cart__info-p"><span class="shop-cart__info-span">Color:</span> Red</p> 
                 <p class="shop-cart__info-p"><span class="shop-cart__info-span">Size:</span> Xll</p>
             </div>
-            <div class="shop-cart__details">
+            <form action="#" class="shop-cart__details">
                 <p class="shop-cart__details-p">$150</p>
-                <p class="shop-cart__details-p shop-cart__details-p-border">2</p>
+                <input type="number" name="shop-cart__details" id="shop-cart__details" class="shop-cart__details-p shop-cart__details-p-border" min="1" max="10" value="1">
                 <p class="shop-cart__details-p">FREE</p>
                 <p class="shop-cart__details-p">$300</p>
-                <img src="img/shopping-cart/none.jpg" alt="none">
-            </div>
+                <button type="reset" class="shop-cart__none-img"><img src="img/shopping-cart/none.jpg" alt="none" class="shop-cart__none-img"></button>
+            </form>
         </div>
         <div class="shop-cart">
             <div class="shop-cart__img"><img src="img/shopping-cart/product.jpg" alt=""></div>
             <div class="shop-cart__info">
-                <h3 class="shop-cart__info-h3">Mango People T-shirt</h3>
+                <a href="#" class="shop-cart__info-h3">Mango People T-shirt</a>
                 <p class="shop-cart__info-p"><span class="shop-cart__info-span">Color:</span> Red</p> 
                 <p class="shop-cart__info-p"><span class="shop-cart__info-span">Size:</span> Xll</p>
             </div>
-            <div class="shop-cart__details">
+            <form class="shop-cart__details">
                 <p class="shop-cart__details-p">$150</p>
-                <p class="shop-cart__details-p shop-cart__details-p-border">2</p>
+                <input type="number" name="shop-cart__details" id="shop-cart__details1" class="shop-cart__details-p shop-cart__details-p-border" min="1" max="10" value="1">
                 <p class="shop-cart__details-p">FREE</p>
                 <p class="shop-cart__details-p">$300</p>
-                <img src="img/shopping-cart/none.jpg" alt="none">
-            </div>
+                <button type="reset" class="shop-cart__none-img"><img src="img/shopping-cart/none.jpg" alt="none" class="shop-cart__none-img"></button>
+            </form>
         </div>
         <div class="shop-cart">
             <div class="shop-cart__img"><img src="img/shopping-cart/product.jpg" alt=""></div>
             <div class="shop-cart__info">
-                <h3 class="shop-cart__info-h3">Mango People T-shirt</h3>
+                <a href="#" class="shop-cart__info-h3">Mango People T-shirt</a>
                 <p class="shop-cart__info-p"><span class="shop-cart__info-span">Color:</span> Red</p> 
                 <p class="shop-cart__info-p"><span class="shop-cart__info-span">Size:</span> Xll</p>
             </div>
-            <div class="shop-cart__details">
+            <form class="shop-cart__details">
                 <p class="shop-cart__details-p">$150</p>
-                <p class="shop-cart__details-p shop-cart__details-p-border">2</p>
+                <input type="number" name="shop-cart__details" id="shop-cart__details2" class="shop-cart__details-p shop-cart__details-p-border" min="1" max="10" value="1">
                 <p class="shop-cart__details-p">FREE</p>
                 <p class="shop-cart__details-p">$300</p>
-                <img src="img/shopping-cart/none.jpg" alt="none">
-            </div>
+                <button type="reset" class="shop-cart__none-img"><img src="img/shopping-cart/none.jpg" alt="none" class="shop-cart__none-img"></button>
+            </form>
         </div>
         <div class="shop-cart__buttons">
-            <a href="" class="shop-cart__button">cLEAR SHOPPING CART</a>
-            <a href="" class="shop-cart__button">cONTINUE sHOPPING</a>
+            <button type="reset" class="shop-cart__button">cLEAR SHOPPING CART</button>
+            <button type="submit" class="shop-cart__button">cONTINUE sHOPPING</button>
         </div>
     <div class="forms">
         <div class="forms__left">
             <form action="#" class="forms__shipping-adress">
             <fieldset class="forms__left-fieldset">
                 <h2 class="forms__h2">Shipping Adress</h2>
-                <input class="form__cell" type="text" placeholder="Bangladesh" required pattern="\S+[А-яа-я]">
-                <input class="form__cell" type="text" placeholder="State" required pattern="\S+[А-яа-я]">
-                <input class="form__cell" type="text" placeholder="State" required pattern="\S+[А-яа-я]">
-                <input class="form__button" type="submit" value="get a quote">
+                <input class="forms__cell" type="text" placeholder="Bangladesh" required pattern="\S+[А-яа-я]">
+                <input class="forms__cell" type="text" placeholder="State" required pattern="\S+[А-яа-я]">
+                <input class="forms__cell" type="text" placeholder="State" required pattern="\S+[А-яа-я]">
+                <input class="forms__button" type="submit" value="get a quote">
             </fieldset>
             </form>
         </div>
@@ -201,9 +201,9 @@
             <form action="#" class="forms__coupon-discount">
             <fieldset class="forms__center-fieldset">
                 <h2 class="forms__h2">coupon discount</h2>
-                <label class="forms__center-fieldset-label" for="name">Enter your coupon code if you have one</label>
-                <input class="form__cell" type="text" placeholder="State" required pattern="\S+[А-яа-я]">
-                <input class="form__button" type="submit" value="Apply coupon">
+                <label class="forms__center-fieldset-label">Enter your coupon code if you have one</label>
+                <input class="forms__cell" type="text" placeholder="State" required pattern="\S+[А-яа-я]">
+                <input class="forms__button" type="submit" value="Apply coupon">
             </fieldset>
             </form>
         </div>

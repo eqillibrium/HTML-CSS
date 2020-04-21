@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>single page</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet prefetch'
         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header center">
         <div class="header__left">
@@ -24,7 +26,7 @@
         </div>
         <div class="header__right">
             <div class="header__cart-drop">
-                <a href="#"><img class="header__cart" src="img/cart.png" alt="cart"></a>
+                <a href="shopping_cart.html"><img class="header__cart" src="img/cart.png" alt="cart"></a>
                 <div class="header__drop">
                     <div class="header__dropbox">
                         <img src="img/headerdropimg1.jpg" class="header__dropimg" alt="">
@@ -41,18 +43,18 @@
                             <img src="img/headerdropstars.jpg" alt="">
                             <p class="header__dropprice">1 x $250</p>
                         </div>
-                        </div>
-                        <div class="header__dropcost">
-                            <p>total</p>
-                            <p>550</p>
-                        </div>
-                        <a href="" class="header__dropbutton">Checkout</a>
-                        <a href="" class="header__dropbutton">Go to cart</a>
+                    </div>
+                    <div class="header__dropcost">
+                        <p>total</p>
+                        <p>550</p>
+                    </div>
+                    <a href="checkout.html" class="header__dropbutton">Checkout</a>
+                    <a href="shopping_cart.html" class="header__dropbutton">Go to cart</a>
                 </div>
             </div>
             <a href="#" class="button">My Account <i class="fa fa-sort-desc button__icon" aria-hidden="true"></i></a>
-            </div>
         </div>
+    </div>
     <div class="nav">
         <ul class="menu center">
             <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
@@ -125,27 +127,30 @@
     <div class="main center">
         <div class="model-box">
             <div class="model-box__model">
-                <div class="div"><a href="#" class="model-box__button"> < </a></div>
-                <div class="div"><img src="img/model.jpg" alt="" class="model-box__photo" ></div>
-                <div class="div"><a href="#" class="model-box__button"> > </a></div>
+                <div class="div"><a href="#" class="model-box__button"> &lt; </a></div>
+                <div class="div"><img src="img/model.jpg" alt="" class="model-box__photo"></div>
+                <div class="div"><a href="#" class="model-box__button"> &gt; </a></div>
             </div>
         </div>
     </div>
     <div class="card-box center">
         <div class="position">
             <div class="product-card">
-                <div class="card__desc"> 
+                <div class="card__desc">
                     <div class="card__name">
                         <h3 class="card__part">WOMEN COLLECTION</h3>
                         <ul class="card__part-list">
-                            <a href="#"><li class="card__part-link"></li></a>
-                            <a href="#"><li class="card__part-link card__part-link-active"></li></a>
-                            <a href="#"><li class="card__part-link"></li></a>
+                            <li><a href="#" class="card__part-link"></a></li>
+                            <li><a href="#" class="card__part-link card__part-link-active"></a></li>
+                            <li><a href="#" class="card__part-link"></a></li>
                         </ul>
                         <h2 class="card__prod-name">Moschino Cheap And Chic</h2>
                     </div>
                     <div class="card__content">
-                        <div class="content__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
+                        <div class="content__text">Compellingly actualize fully researched processes before proactive
+                            outsourcing. Progressively syndicate collaborative architectures before cutting-edge
+                            services. Completely visualize parallel core competencies rather than exceptional portals.
+                        </div>
                         <div class="content__trait">
                             <ul class="content__list">
                                 <li class="content_li">MATERIAL: <span class="black">COTTON</span></li>
@@ -155,18 +160,40 @@
                         <h1 class="card__price">$561</h1>
                     </div>
                 </div>
-                <div class="card__option"> 
-                    <div class="option__box">
-                        <div class="option__color">CHOOSE COLOR</div>
-                        <div class="option__size">CHOOSE SIZE</div>
-                        <div class="option__quantity">QUANTITY</div>
-                    </div>
-                    <div class="option__form">
-                        <div class="option__cell"></div>
-                        <div class="option__cell"></div>
-                        <div class="option__cell"></div>
-                    </div>
-                    <div class="option__button"><a href="#" class="card__button"> <img src="img/basket.png" alt="" class="button__basket"> Add to Cart</a></div>
+                <div class="card-option">
+                    <form action="#" class="card-option__form">
+                        <div class="card-option__cell-box">
+                            <fieldset>
+                                <legend class="card-option__legend">CHOOSE COLOR</legend>
+                                <input list="card-option__datalist1" class="card-option__cell card-option__cell_color"
+                                    required>
+                                <datalist id="card-option__datalist1">
+                                    <option value="red">
+                                    <option value="black">
+                                </datalist>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="card-option__legend">CHOOSE SIZE</legend>
+                                <input list="card-option__datalist2" required class="card-option__cell">
+                                <datalist id="card-option__datalist2">
+                                    <option value="XXL">
+                                    <option value="XL">
+                                </datalist>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="card-option__legend">QUANTITY</legend>
+                                <input type="number" required class="card-option__cell" min="1" max="99">
+                            </fieldset>
+                        </div>
+                        <div class="card-option__button-box">
+                            <fieldset>
+                            <button type="submit" class="card-option__button" value="Add to Cart" name="Add to Cart">
+                                <img src="img/basket.png" alt="basket" class="card-option__basket-img">
+                                Add to Cart
+                            </button>
+                        </fieldset>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -176,28 +203,28 @@
         <div class="like-box__block">
             <div class="like-box__item">
                 <div class="like-box__img-box">
-                    <img src="img/like-box/girl1.jpg" alt="" class="like-box__img" >
+                    <img src="img/like-box/girl1.jpg" alt="" class="like-box__img">
                 </div>
                 <h3 class="like-box__item-name">BLAZE LEGGINGS</h3>
                 <p class="like-box__item-price">$52.00</p>
             </div>
             <div class="like-box__item">
                 <div class="like-box__img-box">
-                    <img src="img/like-box/girl2.png" alt="" class="like-box__img" >
+                    <img src="img/like-box/girl2.png" alt="" class="like-box__img">
                 </div>
                 <h3 class="like-box__item-name">ALEXA SWEATER</h3>
                 <p class="like-box__item-price">$52.00</p>
             </div>
             <div class="like-box__item">
                 <div class="like-box__img-box">
-                    <img src="img/like-box/girl3.jpg" alt="" class="like-box__img" >
+                    <img src="img/like-box/girl3.jpg" alt="" class="like-box__img">
                 </div>
                 <h3 class="like-box__item-name">AGNES TOP</h3>
                 <p class="like-box__item-price">$52.00</p>
             </div>
             <div class="like-box__item">
                 <div class="like-box__img-box">
-                    <img src="img/like-box/girl4.jpg" alt="" class="like-box__img" >
+                    <img src="img/like-box/girl4.jpg" alt="" class="like-box__img">
                 </div>
                 <h3 class="like-box__item-name">SYLVA SWEATER</h3>
                 <p class="like-box__item-price">$52.00</p>
@@ -215,9 +242,10 @@
             <h1 class="subscribe__form-h1">Subscribe</h1>
             <h3 class="subscribe__form-h3">FOR OUR NEWLETTER AND PROMOTION</h3>
             <form action="#" class="subscribe__form-button">
-                <input id="email" placeholder="Enter Your Email" type="text" class="subscribe__email" required pattern="\S+@[a-z]+.[a-z]+">
+                <input id="email" placeholder="Enter Your Email" type="text" class="subscribe__email" required
+                    pattern="\S+@[a-z]+.[a-z]+">
                 <input type="submit" class="subscribe__button" value="Subscribe">
-                
+
             </form>
         </div>
     </div>
@@ -270,13 +298,19 @@
         <div class="rights"> &copy;2017 Brand All Rights Reserved.</div>
         <div id="light" class="social">
             <ul class="social__list normal">
-                <li><a href="https://www.facebook.com/" class="btn-gradient facebook"><i class="fa fa-facebook social__icon"></i></a></li>
-                <li><a href="https://twitter.com/explore" class="btn-gradient twitter"><i class="fa fa-twitter social__icon"></i></a></li>
-                <li><a href="https://www.google.ru/" class="btn-gradient google-plus"><i class="fa fa-google-plus social__icon"></i></a></li>
-                <li><a href="https://www.instagram.com" class="btn-gradient instagram"><i class="fa fa-instagram social__icon"></i></a></li>
-                <li><a href="https://www.linkedin.com" class="btn-gradient linkedin"><i class="fa fa-linkedin social__icon"></i></a></li>
+                <li><a href="https://www.facebook.com/" class="btn-gradient facebook"><i
+                            class="fa fa-facebook social__icon"></i></a></li>
+                <li><a href="https://twitter.com/explore" class="btn-gradient twitter"><i
+                            class="fa fa-twitter social__icon"></i></a></li>
+                <li><a href="https://www.google.ru/" class="btn-gradient google-plus"><i
+                            class="fa fa-google-plus social__icon"></i></a></li>
+                <li><a href="https://www.instagram.com" class="btn-gradient instagram"><i
+                            class="fa fa-instagram social__icon"></i></a></li>
+                <li><a href="https://www.linkedin.com" class="btn-gradient linkedin"><i
+                            class="fa fa-linkedin social__icon"></i></a></li>
             </ul>
         </div>
     </div>
 </body>
+
 </html>

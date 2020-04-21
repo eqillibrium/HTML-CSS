@@ -2126,6 +2126,7 @@ a {
 .product__card {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 38px;
 }
 
 .product__card:hover {
@@ -2181,7 +2182,7 @@ a {
   text-transform: uppercase;
   margin-top: 15px;
   padding-left: 15px;
-  margin-bottom: 59px;
+  margin-bottom: 21px;
 }
 
 .product__card-box {
@@ -2391,6 +2392,9 @@ a {
   color: #6f6e6e;
   line-height: 20px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .checkbox__text:before {
@@ -2731,6 +2735,9 @@ a {
   color: #222222;
   text-transform: uppercase;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .forms__radio-text:before {
@@ -2743,6 +2750,9 @@ a {
   border: 1px solid #222222;
   border-radius: 50%;
   background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .forms__radio-text:after {
@@ -2759,6 +2769,9 @@ a {
   opacity: 0;
   -webkit-transition: .2s;
   transition: .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .forms__radio-input:checked + .forms__radio-text:after {

@@ -1575,6 +1575,7 @@ a {
 
     &__card {
         transition: all 0.3s;
+        margin-bottom: 38px;
 
         &:hover {
             box-shadow: 0 0 10px $color-platinum;
@@ -1618,7 +1619,7 @@ a {
         text-transform: uppercase;
         margin-top: 15px;
         padding-left: 15px;
-        margin-bottom: 59px;
+        margin-bottom: 21px;
     }
 
     &__card-box {
@@ -1791,6 +1792,7 @@ a {
     color: rgba(111, 110, 110, 1);
     line-height: 20px;
     text-transform: uppercase;
+    display: flex;
 }
 
 .checkbox__text:before {
@@ -2071,6 +2073,7 @@ a {
         color: $color-black;
         text-transform: uppercase;
         font-weight: 600;
+        display: flex;
     }
 
     &__radio-text:before {
@@ -2083,6 +2086,7 @@ a {
         border: 1px solid $color-black;
         border-radius: 50%;
         background: #FFF;
+        display: flex;
     }
 
     &__radio-text:after {
@@ -2097,6 +2101,7 @@ a {
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5);
         opacity: 0;
         transition: .2s;
+        display: flex;
     }
 
     &__radio-input:checked+&__radio-text:after {

@@ -11,9 +11,8 @@
         href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="header center">
+    <header class="header center">
         <div class="header__left">
             <a class="logo" href="index.html">
                 <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="accent">D</span>
@@ -29,19 +28,27 @@
                 <a href="shopping_cart.html"><img class="header__cart" src="img/cart.png" alt="cart"></a>
                 <div class="header__drop">
                     <div class="header__dropbox">
-                        <img src="img/headerdropimg1.jpg" class="header__dropimg" alt="">
+                        <a href="single_page.html">
+                            <img src="img/headerdropimg1.jpg" class="header__dropimg" alt="">
+                        </a>
                         <div class="header__dropcontent">
-                            <h3 class="header__dropname">Rebox Zane</h3>
-                            <img src="img/headerdropstars.jpg" alt="">
-                            <p class="header__dropprice">1 x $250</p>
+                            <a href="single_page.html">
+                                <h3 class="header__dropname">Rebox Zane</h3>
+                                <img src="img/headerdropstars.jpg" alt="">
+                                <p class="header__dropprice">1 x $250</p>
+                            </a>
                         </div>
                     </div>
                     <div class="header__dropbox">
-                        <img src="img/headerdropimg2.jpg" class="header__dropimg" alt="">
+                        <a href="single_page.html">
+                            <img src="img/headerdropimg2.jpg" class="header__dropimg" alt="">
+                        </a>
                         <div class="header__dropcontent">
-                            <h3 class="header__dropname">Rebox Zane</h3>
-                            <img src="img/headerdropstars.jpg" alt="">
-                            <p class="header__dropprice">1 x $250</p>
+                            <a href="single_page.html">
+                                <h3 class="header__dropname">Rebox Zane</h3>
+                                <img src="img/headerdropstars.jpg" alt="">
+                                <p class="header__dropprice">1 x $250</p>
+                            </a>
                         </div>
                     </div>
                     <div class="header__dropcost">
@@ -55,8 +62,8 @@
             </div>
             <a href="#" class="button">My Account <i class="fa fa-sort-desc button__icon" aria-hidden="true"></i></a>
         </div>
-    </div>
-    <div class="nav">
+    </header>
+    <header class="nav">
         <ul class="menu center">
             <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
             <li class="menu__list">
@@ -114,7 +121,7 @@
                 </div>
             </li>
         </ul>
-    </div>
+    </header>
     <div class="nav-line center">
         <div class="nav-line__h1">New Arrivals</div>
         <div class="nav-line__breadcrumbs">
@@ -126,7 +133,7 @@
         </div>
     </div>
     <div class="product center">
-        <div class="category">
+        <aside class="category">
             <ul class="category__list">
                 <li><a href="#" class="category__head">Category</a></li>
                 <li><a href="#" class="category__link">Bags </a></li>
@@ -144,9 +151,9 @@
                 <li><a href="#" class="category__head">brand</a></li>
                 <li><a href="#" class="category__head">designer</a></li>
             </ul>
-        </div>
+        </aside>
         <div class="product__right-part">
-            <div class="trending">
+            <section class="trending">
                 <h3 class="trending__h3">Trending now</h3>
                 <ul class="trending__list">
                     <li><a href="#" class="trending__link">Bohemian </a></li>
@@ -156,7 +163,7 @@
                     <li><a href="#" class="trending__link">Lace </a></li>
                     <li><a href="#" class="trending__link">Bohemian </a></li>
                 </ul>
-            </div>
+            </section>
             <div class="trending">
                 <h3 class="trending__h3">Size</h3>
                 <form class="checkbox-box">
@@ -208,7 +215,7 @@
                     <p class="sort__name-p4">09</p>
                 </div>
             </div>
-            <div class="product__card-box">
+            <section class="product__card-box">
                 <div class="product__card">
                     <a href="single_page.html">
                         <img class="product__card-img" src="img/product/man1.jpg" alt="man.png">
@@ -272,7 +279,7 @@
                         <p class="product__card-price">$52.00</p>
                     </a>
                 </div>
-            </div>
+            </section>
             <div class="product__buttons">
                 <div class="product__button-left">
                     <ul class="product__button-left-list">
@@ -333,7 +340,7 @@
             </form>
         </div>
     </div>
-    <div class="footer center">
+    <footer class="footer center">
         <div class="footer__left">
             <a class="logo" href="index.html">
                 <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="accent">D</span>
@@ -353,7 +360,7 @@
                     <li><a href="#" class="footer__link">Shop </a></li>
                     <li><a href="#" class="footer__link">About </a></li>
                     <li><a href="#" class="footer__link">How It Works</a></li>
-                    <li><a href="#" class="footer__link">Contact</a></li>
+                    <li><a href="checkout.html" class="footer__link">Contact</a></li>
                 </ul>
             </div>
             <div class="footer__right-block">
@@ -377,8 +384,8 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="footer__line center">
+    </footer>
+    <footer class="footer__line center">
         <div class="rights"> &copy;2017 Brand All Rights Reserved.</div>
         <div id="light" class="social">
             <ul class="social__list normal">
@@ -394,7 +401,6 @@
                             class="fa fa-linkedin social__icon"></i></a></li>
             </ul>
         </div>
-    </div>
+    </footer>
 </body>
-
 </html>
